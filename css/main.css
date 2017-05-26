@@ -1,0 +1,112 @@
+body {
+	margin-top: 42px; /*to move from fixed down*/
+	transition: all 400ms; /*tell moven all elements 400 millisec*/
+}
+
+h1 {
+	font-size: 50px;
+}
+
+section {
+	min-height: 600px;
+	/*height: 100vh;*/
+	margin-top: -42px;
+	padding-top: 42px;
+}
+nav {
+	background: #888;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+
+nav li {
+	display: inline-block;
+	/*border: 1px solid black;*/
+	padding: 3px;
+	margin: 10px;
+}
+
+nav li a {
+	text-decoration: none;
+}
+
+#menu-button {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	display: none;
+	border: none;
+	background: transparent;
+	font-size: 28px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+#about .row div {
+	border: 1px solid black;
+	/*todo remove this later*/
+	height: 200px;
+}
+
+.img-responsive {
+	width: 100%; /*100 of the parent*/
+	
+
+}
+
+footer {
+	background: #888;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+}
+
+#resume .row div  {
+	border: 1px dotted black;
+}
+
+
+
+/*mobile-only styles here*/
+@media (max-width: 768px) {
+
+    #menu-button {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+    nav li {
+	display: block;
+    }
+
+    .move-down {
+    	margin-top: 138px;
+    }
+
+    .move-down section {
+    	padding-top: 138px;
+    	margin-top: -138px;
+    }
+
+    /*bootstrap*/
+
+
+}
+
+
+
+
+
+
+
+
